@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="eng" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Chatbot In JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width" ,initial-scale="1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <!-- Include Axios from CDN in your HTML file (if not installed using npm) -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="script.js" defer></script>
+  </head>
+  <body class="show-Chatbot">
+    <button class="Chatbot-toggler">
+      <span class="material-symbols-outlined">mode_comment</span>
+      <span class="material-symbols-outlined">close</span>
+    </button>
+    <div class="Chatbot">
+      <header>
+        <h2>Chatbot</h2>
+      </header>
+      <ul class="chatbox">
+        <li class="chat incoming">
+          <span class="material-symbols-outlined">smart_toy</span>
+          <p>
+            Hi there 🙋‍♂️ <br />
+            How Can I Help You Today ?
+          </p>
+        </li>
+      </ul>
+      <div class="chat-input">
+        <textarea placeholder="Enter a Message....." required></textarea>
+        <span id="send-btn" class="material-symbols-outlined">Send</span>
+      </div>
+    </div>
+  </body>
+</html>
